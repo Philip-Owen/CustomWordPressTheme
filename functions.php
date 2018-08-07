@@ -12,6 +12,10 @@
 
 
   function customtheme_setup() {
+    register_nav_menus( array(
+      'primary' => __('Primary Menu', 'customtheme')
+    ) );
+
     add_theme_support('title-tag');
   }
 
